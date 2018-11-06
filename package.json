@@ -1,25 +1,17 @@
 {
-  "name": "webrtc-video-conference-tutorial",
-  "version": "1.0.0",
-  "description": "This tutorial is divided in three versions:",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/agilityfeat/webrtc-video-conference-tutorial.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/agilityfeat/webrtc-video-conference-tutorial/issues"
-  },
-  "homepage": "https://github.com/agilityfeat/webrtc-video-conference-tutorial#readme",
+  "name": "webrtc-demo",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": "index.js",
   "dependencies": {
-    "express": "4.15.4",
-    "socket.io": "2.0.3"
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.1.0",
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "express": "4.16.4",
+    "socket.io": "2.1.1"
   }
 }
