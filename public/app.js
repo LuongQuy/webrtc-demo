@@ -174,7 +174,7 @@
   }
 
   var container = document.getElementById('container');
-  var isScreenRotated = true;
+  var isScreenRotated = false;
   function fixPositionRemoteVideo() {
     var cw = container[isScreenRotated ? 'clientHeight' : 'clientWidth'];
     var ch = container[isScreenRotated ? 'clientWidth' : 'clientHeight'];
