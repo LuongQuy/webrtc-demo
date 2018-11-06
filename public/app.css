@@ -23,17 +23,15 @@ video {
   bottom: 0;
   right: 0;
   max-width: 50vw;
-  max-height: 30vh;
+  max-height: 20vh;
   border: 1px solid grey;
   border-radius: 2px;
 }
-.screen-rotated #local-video {
-  transform: rotateZ(90deg) translateX(-100%);
-  transform-origin: bottom left;
-  right: auto;
-  left: 0;
-  max-width: 30vh;
-  max-height: 50vw;
+@media (orientation: landscape) {
+  #local-video {
+    max-width: 20vw;
+    max-height: 50vh;
+  }
 }
 
 #remote-video {

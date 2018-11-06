@@ -28,7 +28,7 @@
   socket.on('icecandidate', onIceCandidate);
 
   // Ask for user name and room
-  askRoomName().then(joinRoom);
+  askRoomNameThenJoin();
 
   var room = '';
   var isCaller = false;
@@ -38,7 +38,7 @@
   var remoteVideo = document.getElementById('remote-video');
   var remoteStream = null;
 
-  function askRoomName() {
+  function askRoomNameThenJoin() {
     return swal({
       title: 'Join room',
       input: 'text',
@@ -50,10 +50,8 @@
         throw new Error('Invalid room name');
       }
       room = res.value;
-    }).catch(askRoomName);
-  }
-  function joinRoom() {
-    socket.emit('join', room);
+      socket.emit('join', room);
+    }).catch(askRoomNameThenJoin);
   }
 
   function onCreated() {
