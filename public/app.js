@@ -206,8 +206,4 @@
     window.removeEventListener('resize', fixPositionRemoteVideo);
     window.addEventListener('resize', fixPositionRemoteVideo);
   }
-
-  function upperCaseFirstLetter(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  }
 })();
