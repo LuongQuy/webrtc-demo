@@ -142,7 +142,7 @@
   }
   function onPeerAddStream(e) {
     setVideoStream(remoteVideo, e.stream);
-    fixPositionRemoteVideo();
+    // fixPositionRemoteVideo();
   }
   function onPeerError(err) {
     console.error(err);
